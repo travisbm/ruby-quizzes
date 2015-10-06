@@ -3,12 +3,21 @@
 #There is an error in the following code.  Fix it!
 
 items = Array.new
-items.push{:a => "b", :c => "d"}
+items.push(:a => "b", :c => "d")
 
 #-------------------------------------------------#
 #Question 2. Regular Ball Super Ball
 
 #Create a class Ball.
+
+class Ball
+
+  attr_accessor :ball_type
+
+  def initialize(type = 'regular.')
+    :ball_type = type
+  end
+end
 
 #Ball objects should accept one argument for "ball type" when instantiated.
 
