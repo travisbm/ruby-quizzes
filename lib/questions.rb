@@ -12,10 +12,12 @@ items.push(:a => "b", :c => "d")
 
 class Ball
 
-  attr_accessor :ball_type
-
   def initialize(type = 'regular.')
-    :ball_type = type
+    @ball_type = type
+  end
+
+  def ball_type
+    @ball_type
   end
 end
 
